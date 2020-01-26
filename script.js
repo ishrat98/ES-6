@@ -164,7 +164,7 @@ Person.prototype.myFriends5 = function(friends) {
 var friends = ['Bob', 'Jane', 'Mark'];
 new Person('John').myFriends5(friends);
 */
-
+/*
 function Person(name) {
     this.name = name;
 }
@@ -237,4 +237,10 @@ for (const cur of boxesArr6) {
         }
         cur.textContent = 'I changed to blue!';
 }
+*/
 
+const h = document.querySelector('h1');
+const boxes = document.querySelectorAll('.box');
+const all = [h, ...boxes];
+
+Array.from(all).forEach(cur => cur.style.color = 'purple');
