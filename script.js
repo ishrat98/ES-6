@@ -221,3 +221,20 @@ function calcAgeRetirement(year) {
 const [age2, retirement] = calcAgeRetirement(1990);
 console.log(age2);
 console.log(retirement);
+
+//array
+
+const boxes = document.querySelectorAll('.box');
+
+const boxesArr6 = Array.from(boxes);
+
+boxesArr6.forEach(cur=> 
+    cur.style.backgroundColor= 'dodgerblue');
+
+for (const cur of boxesArr6) {
+        if (cur.className.includes('blue')) {
+            continue;
+        }
+        cur.textContent = 'I changed to blue!';
+}
+
