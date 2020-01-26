@@ -56,3 +56,47 @@ for (var i = 0; i < 5; i++) {
 }
 
 console.log(i);
+
+let firstName = 'John';
+let lastName = 'Smith';
+const yearOfBirth = 1990;
+
+function calcAge(year) {
+    return 2016 - year;
+}
+
+// ES5
+console.log('This is ' + firstName + ' ' + lastName + '. He was born in ' + yearOfBirth + '. Today, he is ' + calcAge(yearOfBirth) + ' years old.');
+
+// ES6
+console.log(`This is ${firstName}`);
+
+const n = `${firstName} ${lastName}`;
+console.log(n.startsWith('j'));
+console.log(n.endsWith('Sm'));
+console.log(n.includes('oh'));
+console.log(`${firstName} `.repeat(5));
+
+//arrow
+
+const years = [1990, 1997 ,1998];
+
+var ages5 = years.map(function(el)  {
+    return 2020-el;
+});
+
+console.log(ages5);
+
+let ages6 = years.map(el => 2020-el);
+console.log(ages6);
+
+ages6 = years.map((el, index) => `Age element ${index + 1}: ${2016 - el}.`);
+console.log(ages6);
+
+ages6 = years.map((el, index) => {
+    const now = new Date().getFullYear();
+    const age = now - el;
+    return `Age element ${index + 1}: ${age}.`
+});
+console.log(ages6);
+
