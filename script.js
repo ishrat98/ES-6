@@ -238,7 +238,7 @@ for (const cur of boxesArr6) {
         cur.textContent = 'I changed to blue!';
 }
 */
-
+/*
 const h = document.querySelector('h1');
 const boxes = document.querySelectorAll('.box');
 const all = [h, ...boxes];
@@ -267,3 +267,15 @@ function isFullAge6(limit, ...years)    {
 }
 
 isFullAge6(16, 1990,1999);
+*/
+
+function SmithPerson(firstName, yearOfBirth, lastName='Smith',nationality='American')   {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.yearOfBirth = yearOfBirth;
+    this.nationality = nationality;
+}
+
+var john = new SmithPerson('John',1990);
+
+var emily = new SmithPerson('Emily',1983, 'Diaz', 'spanish');
