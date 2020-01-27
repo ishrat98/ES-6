@@ -301,6 +301,7 @@ console.log(question.size);
 //     console.log('Answer 4 is here')
 // }
 //question.clear();
+/*
 question.forEach((value, key) => console.log(`This is ${key}, and it's set to ${value}`));
 
 
@@ -313,3 +314,26 @@ for (let [key, value] of question.entries()) {
 const ans = parseInt(prompt('Write the correct answer'));
 
 console.log(question.get(ans===question.get('correct')));
+*/
+
+//class
+class Person6 {
+    constructor (name, yearOfBirth, job) {
+        this.name = name;
+        this.yearOfBirth = yearOfBirth;
+        this.job = job;
+    }
+    
+    calculateAge() {
+        var age = new Date().getFullYear - this.yearOfBirth;
+        console.log(age);
+    }
+    
+    static greeting() {
+        console.log('Hey there!');
+    }
+}
+
+const john6 = new Person6('John', 1990, 'teacher');
+
+Person6.greeting();
