@@ -261,3 +261,9 @@ function SmithPerson(firstName, yearOfBirth, lastName = 'Smith', nationality = '
 
 var john = new SmithPerson('John', 1990);
 var emily = new SmithPerson('Emily', 1983, 'Diaz', 'spanish');
+
+function isFullAge6(limit, ...years)    {
+    years.forEach(cur => console.log(2016 - cur >= limit));
+}
+
+isFullAge6(16, 1990,1999);
